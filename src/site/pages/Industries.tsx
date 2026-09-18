@@ -228,7 +228,7 @@ const Industries = () => {
                   ))}
                 </ul>
                 <div className="mt-2 flex flex-wrap gap-3">
-                  <a href="/signup">
+                  <a href="https://wa.me/2349017758165" target="_blank" rel="noopener noreferrer">
                     <Button className="gap-2 rounded-md bg-primary px-8 text-white shadow-md hover:opacity-90">
                       Get Started <ArrowRight className="h-4 w-4" />
                     </Button>

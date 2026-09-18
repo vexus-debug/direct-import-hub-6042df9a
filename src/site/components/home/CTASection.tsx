@@ -23,7 +23,7 @@ const CTASection = () => {
             Imagine knowing exactly what your clinic made today. Appointments running on time. Staff doing their jobs without you chasing anyone. That's Clinexus, from day one.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href="/signup">
+            <a href="https://wa.me/2349017758165" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="gap-2 rounded-md bg-primary px-8 text-white shadow-lg hover:opacity-90">
                 Get Started <ArrowRight className="h-4 w-4" />
               </Button>

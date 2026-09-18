@@ -93,7 +93,7 @@ const Navbar = () => {
               Log In
             </Button>
           </a>
-          <a href="/signup">
+          <a href="https://wa.me/2349017758165" target="_blank" rel="noopener noreferrer">
             <Button
               size="sm"
               className="gap-1.5 rounded-full bg-primary px-5 text-white shadow-md hover:opacity-90"
@@ -146,7 +146,7 @@ const Navbar = () => {
                   <a href="/login" onClick={() => setOpen(false)}>
                     <Button variant="outline" className="w-full rounded-md">Log In</Button>
                   </a>
-                  <a href="/signup" onClick={() => setOpen(false)}>
+                  <a href="https://wa.me/2349017758165" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
                     <Button className="w-full gap-2 rounded-md bg-primary text-white hover:opacity-90">
                       Get Started <ArrowRight className="h-4 w-4" />
                     </Button>

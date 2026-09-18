@@ -66,7 +66,7 @@ const HeroSection = () => {
           <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-white/60">
             Stop chasing payments, fixing billing mistakes, and drowning in paperwork. Clinexus runs the business side of your clinic so you can focus on patients, and actually go home on time.
           </p>
-          <a href="/signup">
+          <a href="https://wa.me/2349017758165" target="_blank" rel="noopener noreferrer">
             <Button
               size="lg"
               className="gap-2 rounded-full bg-primary px-10 text-white shadow-lg shadow-[hsl(var(--primary))]/30 hover:opacity-90"
