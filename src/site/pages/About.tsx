@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Shield, Zap, Heart, Lightbulb, CheckCircle2, ArrowRight, Target, Globe, Award, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const APP_URL = "/signup";
+const APP_URL = "https://wa.me/2349017758165";
 
 const values = [
   { icon: Shield, title: "Your Patients' Trust, Protected", description: "One data slip can wreck a clinic's reputation. We lock patient records down tight, so that's never something you have to worry about." },
@@ -223,7 +223,7 @@ const About = () => {
               Join 500+ clinics already saving time, cutting errors, and growing revenue with Clinexus.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <a href={APP_URL}>
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="gap-2 rounded-md bg-primary px-8 text-primary-foreground shadow-md hover:opacity-90">
                   Get Started <ArrowRight className="h-4 w-4" />
                 </Button>

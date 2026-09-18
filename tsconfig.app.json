@@ -33,6 +33,11 @@
     "src"
   ],
   "exclude": [
-    "src/integrations/supabase/auth-middleware.ts"
+    "src/integrations/supabase/auth-middleware.ts",
+    "src/router.tsx",
+    "src/routeTree.gen.ts",
+    "src/routes",
+    "src/server.ts",
+    "src/start.ts"
   ]
 }
