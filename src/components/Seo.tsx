@@ -164,7 +164,7 @@ export function Seo() {
             "@type": "Organization",
             name: "Clinexus",
             url: origin,
-            logo: `${origin}/favicon.png`,
+            logo: `${origin}/pwa-icon-512.png`,
             sameAs: ["https://instagram.com/clinexus_ng", "https://x.com/clinexus_ng"],
           },
           {
