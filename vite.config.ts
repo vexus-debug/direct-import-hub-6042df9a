@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => ({
       filename: "sw.js",
       devOptions: { enabled: false },
       manifest: false,
-      includeAssets: ["favicon.ico", "pwa-icon-192.png", "pwa-icon-512.png", "apple-touch-icon.png"],
+      includeAssets: ["favicon.png", "pwa-icon-192.png", "pwa-icon-512.png", "apple-touch-icon.png"],
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,woff,woff2}"],
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
