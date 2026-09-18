@@ -10,7 +10,9 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
-  });
+  } as Parameters<typeof createRouter>[0] extends string
+    ? never
+    : Parameters<typeof createRouter>[0]);
 
   return router;
 };
