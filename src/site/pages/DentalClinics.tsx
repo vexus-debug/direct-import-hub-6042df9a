@@ -40,12 +40,12 @@ const Screenshot = ({ src, alt }: { src: string; alt: string }) => (
 );
 
 const modules = [
-  { icon: ClipboardList, name: "Patient records", shot: shotPatients, shotAlt: "Patient list with contact details, visit history and status", benefit: "One record instead of five folders per patient.", body: "Every treatment plan, prescription, visit, X-ray and note lives against the same patient, no digging through paper or a separate imaging folder. Personal details, emergency contact, medical history, allergies and alerts stay visible at the top of the profile." },
-  { icon: CalendarClock, name: "Scheduling", shot: shotAppointments, shotAlt: "Monthly appointment calendar showing booked patients per day", benefit: "Scheduling that doesn't collide.", body: "Book by patient, clinician, treatment and chair without double-booking a chair or a clinician who's off that day. Day, week and month views, a live chair-availability grid, a walk-in queue and waiting list keep the whole day moving." },
-  { icon: Smile, name: "Dental charting", shot: shotCharts, shotAlt: "Interactive adult tooth chart with per-tooth condition colours", benefit: "Clinical charting built around dentistry.", body: "Chart tooth-by-tooth, not in a paragraph someone has to re-read to work out what was actually done. Treatment planning, prescriptions and consent forms stay tied to the same patient record rather than kept separately." },
-  { icon: Wallet, name: "Billing & profitability", shot: shotBilling, shotAlt: "Billing screen with invoices, amounts owed and payment status", benefit: "Billing that doesn't leak revenue.", body: "Know what's owed, what's on a payment plan and what each treatment actually costs to deliver. Invoicing, estimates, expenses, staff commissions, revenue allocation and profitability reporting stay connected by treatment and clinician." },
-  { icon: Boxes, name: "Inventory", shot: shotInventory, shotAlt: "Inventory list showing stock levels and low-stock alerts", benefit: "Materials that don't run out mid-procedure.", body: "Know your stock levels before a filling starts, not while it's underway. Inventory, cost and valuation tracking, treatment materials, suppliers and purchase orders show what is available and what needs attention." },
-  { icon: ShieldCheck, name: "Oversight & access", shot: shotDashboard, shotAlt: "Clinic dashboard with patient count, revenue and today's schedule", benefit: "The right people seeing the right things.", body: "A dashboard brings together patient count, today's completion rate, pending payments, monthly revenue, today's schedule and live activity. Role-based access keeps finance, staff and audit screens with the people who need them." },
+  { icon: ClipboardList, name: "Patient records", shot: shotPatients, shotAlt: "Patient list with contact details, visit history and status", benefit: "Every patient's whole story, in one place.", body: "No more digging through folders. Treatment plans, prescriptions, X-rays and notes all live with the patient. Allergies, medical history and emergency contacts sit right at the top, so you never miss them." },
+  { icon: CalendarClock, name: "Scheduling", shot: shotAppointments, shotAlt: "Monthly appointment calendar showing booked patients per day", benefit: "No more double-booked chairs.", body: "Book by patient, dentist and chair without clashes. Day, week and month views, a live chair grid, a walk-in queue and a waiting list keep the whole day moving, even when it's hectic." },
+  { icon: Smile, name: "Dental charting", shot: shotCharts, shotAlt: "Interactive adult tooth chart with per-tooth condition colours", benefit: "Chart by tooth, not by memory.", body: "Tap the tooth, record what you found. Treatment plans, prescriptions and consent forms stay attached to the same patient, so nothing gets lost between visits." },
+  { icon: Wallet, name: "Billing", shot: shotBilling, shotAlt: "Billing screen with invoices, amounts owed and payment status", benefit: "Stop money leaking out of the clinic.", body: "See who owes you, who's on a payment plan, and what each treatment really costs you to deliver. No more month-end surprises." },
+  { icon: Boxes, name: "Inventory", shot: shotInventory, shotAlt: "Inventory list showing stock levels and low-stock alerts", benefit: "Never run out mid-procedure again.", body: "Know what's on the shelf before the patient sits down, not while they're in the chair. Low-stock alerts, suppliers and purchase orders all in one place." },
+  { icon: ShieldCheck, name: "Oversight & access", shot: shotDashboard, shotAlt: "Clinic dashboard with patient count, revenue and today's schedule", benefit: "You see everything. Your staff see only their part.", body: "Patient numbers, today's schedule, pending payments and monthly revenue on one screen. Each person on your team only sees what their job needs." },
 ];
 
 
@@ -60,46 +60,46 @@ const plans = [
 const coreGroups = [
   {
     icon: Users,
-    title: "Patient care & scheduling",
-    benefit: "Fewer no-shows, shorter waits, calmer front desk.",
+    title: "Patients & appointments",
+    benefit: "Fewer no-shows. Shorter waits. A calmer front desk.",
     points: [
-"Patient profiles with history, files, correspondence, allergies and alerts",
-"Appointments, clinician schedules, chair availability and a live waiting list",
-"SOAP notes, treatment plans, prescriptions and consent forms captured digitally",
-"Treatment materials linked to what was used, so stock and clinical notes agree",
+"Every patient's history, files and allergies in one profile",
+"Appointments, dentist schedules and a live waiting list",
+"Notes, treatment plans, prescriptions and consent forms, all digital",
+"Treatments link to the materials they use, so stock and notes agree",
     ],
   },
   {
     icon: Wallet,
-    title: "Finance & billing",
-    benefit: "Know what you earned, what it cost and what's still owed.",
+    title: "Money & billing",
+    benefit: "Know what you earned, what it cost and who still owes you.",
     points: [
-"Invoicing and estimates before a patient commits to treatment",
-"Payment plans for higher-value work like implants and orthodontics",
-"Expenses, staff commission payouts and revenue allocation tracked as they happen",
-"Profitability by treatment and clinician, not just month-end totals",
+"Invoices and estimates before the patient commits to treatment",
+"Payment plans for big work like implants and braces",
+"Expenses and staff commissions tracked as they happen",
+"See profit per treatment and per dentist — not just month-end totals",
     ],
   },
   {
     icon: Boxes,
-    title: "Inventory & supply chain",
-    benefit: "Never lose a procedure to an empty shelf or forgotten reorder.",
+    title: "Stock & suppliers",
+    benefit: "Never cancel a procedure because something ran out.",
     points: [
-"Materials and consumables tracked with real cost and valuation",
-"Treatment materials linked directly to the treatments that consume them",
-"Suppliers and purchase orders kept against the items they deliver",
-"Stock levels visible before the next patient is in the chair",
+"Every material tracked with its real cost and value",
+"Treatments link straight to the materials they consume",
+"Suppliers and purchase orders stay with the items they deliver",
+"Check what's on the shelf in seconds, before the next patient",
     ],
   },
   {
     icon: FileBarChart,
-    title: "Reports & administration",
-    benefit: "Run the clinic on evidence, and prove what happened.",
+    title: "Reports & admin",
+    benefit: "Run your clinic on facts, not guesses.",
     points: [
-"Standard reports and advanced analytics across clinical, financial and operational activity",
-"Staff records, document storage, website settings and clinic administration",
-"An audit log showing who changed what and when",
-"A live activity feed so owners see the day without chasing updates",
+"Clear reports on patients, money and daily activity",
+"Staff records, documents and clinic settings in one place",
+"An audit trail showing who changed what, and when",
+"A live feed, so you always know what's happening without asking",
     ],
   },
 ];
@@ -125,7 +125,8 @@ const DentalClinics = () => {
               variants={reveal}
               className="mx-auto mb-8 max-w-4xl text-4xl font-bold leading-tight text-foreground md:text-6xl"
             >
-              The clinical work is solid. Is everything around it?
+              You didn't train for years{" "}
+              <span className="text-primary">to fight paperwork.</span>
             </motion.h1>
             <motion.div initial="hidden" animate="show" variants={reveal} transition={{ delay: 0.3 }} className="flex flex-col items-center justify-center gap-4 md:flex-row">
               <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-md bg-primary px-10 py-4 font-bold text-primary-foreground transition-colors hover:bg-foreground">
@@ -136,16 +137,16 @@ const DentalClinics = () => {
               </Link>
             </motion.div>
             <motion.p initial="hidden" whileInView="show" viewport={viewport} variants={reveal} className="mx-auto mt-12 max-w-3xl border-t border-primary/20 pt-8 text-sm leading-relaxed text-muted-foreground">
-              Clinexus is built working directly with dental clinics running real patient loads, the workflow below was shaped by what those clinics actually needed, not designed in the abstract and hoped to fit.
+              We built Clinexus sitting with dental clinics like yours — busy chairs, real patients, real days. Everything below exists because a clinic like yours asked for it, not because a software company guessed.
             </motion.p>
           </header>
 
           <section id="features" className="scroll-mt-24">
             <motion.h2 initial="hidden" whileInView="show" viewport={viewport} variants={reveal} className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
-              What's actually in it, <span className="text-muted-foreground">what it does, specifically</span>
+              What you get, <span className="text-muted-foreground">in plain words</span>
             </motion.h2>
             <motion.p initial="hidden" whileInView="show" viewport={viewport} variants={reveal} className="mb-10 max-w-2xl text-muted-foreground">
-              Patient care, scheduling, clinical records, money and stock move through one connected system instead of separate folders and conversations.
+              One simple system for your patients, your appointments, your money and your stock — instead of folders, notebooks and endless chats.
             </motion.p>
             <div className="mb-24 grid gap-6 md:grid-cols-2">
               {modules.map((item, i) => (
@@ -164,10 +165,10 @@ const DentalClinics = () => {
           </section>
 
           <motion.h2 initial="hidden" whileInView="show" viewport={viewport} variants={reveal} className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
-            The rest of the clinic, <span className="text-muted-foreground">included, not a separate product</span>
+            The rest of the clinic, <span className="text-muted-foreground">already in there — not another product to buy</span>
           </motion.h2>
           <motion.p initial="hidden" whileInView="show" viewport={viewport} variants={reveal} className="mb-10 max-w-2xl text-muted-foreground">
-            The clinical work is only half of a practice. The other half, money, stock, staff and patients you haven't seen in a year, sits in the same system, using the same records.
+            Seeing patients is only half the job. The other half — money, stock, staff and the patients you haven't seen in a year — lives in the same system, using the same records.
           </motion.p>
           <div className="mb-24 grid gap-4 md:grid-cols-2">
             {coreGroups.map((group, i) => (
@@ -183,32 +184,32 @@ const DentalClinics = () => {
           <div className="mb-24 grid gap-4 md:grid-cols-12">
             <motion.section initial="hidden" whileInView="show" viewport={viewport} variants={slide("left")} className="eye-panel col-span-12 rounded-3xl p-8 md:col-span-7">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10"><Users className="h-5 w-5 text-primary" /></div>
-              <h3 className="mb-2 text-xl font-bold text-card-foreground">A clear view of the clinic, every day</h3>
-              <p className="mb-5 font-medium text-primary">See what's happening without asking five people for an update.</p>
-              <ul className="space-y-2.5">{["Patient count, today's completion rate, pending payments and monthly revenue", "Today's schedule, who's up next, weekly stats and a live activity feed", "Standard reports and advanced analytics for the decisions behind the numbers"].map((point) => <li key={point} className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground"><Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><span>{point}</span></li>)}</ul>
+              <h3 className="mb-2 text-xl font-bold text-card-foreground">Know what's happening, every day</h3>
+              <p className="mb-5 font-medium text-primary">Without chasing anyone for an update.</p>
+              <ul className="space-y-2.5">{["Patient count, pending payments and this month's revenue, right up front", "Today's schedule and who's next, plus a live activity feed", "Reports that answer the questions you actually ask"].map((point) => <li key={point} className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground"><Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><span>{point}</span></li>)}</ul>
             </motion.section>
             <motion.section initial="hidden" whileInView="show" viewport={viewport} variants={slide("right")} className="eye-panel col-span-12 rounded-3xl p-8 md:col-span-5">
               <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10"><ShieldCheck className="h-5 w-5 text-primary" /></div>
-              <h3 className="mb-2 text-xl font-bold text-card-foreground">Access follows the role</h3>
-              <p className="mb-5 font-medium text-primary">Narrower roles don't see finance, staff or audit screens.</p>
+              <h3 className="mb-2 text-xl font-bold text-card-foreground">Everyone sees only what they should</h3>
+              <p className="mb-5 font-medium text-primary">Reception doesn't see your finances. Simple.</p>
               <div className="flex flex-wrap gap-2">{roles.map((role) => <span key={role} className="rounded-full border border-primary/20 px-3 py-1 text-xs text-muted-foreground">{role}</span>)}</div>
             </motion.section>
           </div>
 
           <motion.section initial="hidden" whileInView="show" viewport={viewport} variants={reveal} className="eye-panel rounded-[3rem] p-8 text-center md:p-12" style={{ borderColor: "hsl(var(--primary) / 0.3)" }}>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-primary">Getting started</p>
-            <h2 className="mb-4 text-3xl font-bold text-card-foreground">One plan, everything above included</h2>
-            <p className="mx-auto mb-12 max-w-2xl text-muted-foreground">No tier that holds back billing or inventory until you pay more, patient care, clinical, finance, inventory and admin are all included from day one.</p>
+            <h2 className="mb-4 text-3xl font-bold text-card-foreground">One plan. Everything included. No surprises.</h2>
+            <p className="mx-auto mb-12 max-w-2xl text-muted-foreground">We don't lock billing or stock behind a pricier tier. Everything you just read is included from day one — just pick how often you want to pay.</p>
             <div className="mx-auto mb-12 grid max-w-4xl gap-8 md:grid-cols-3">{plans.map((plan, i) => <motion.div key={plan.period} initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={viewport} transition={{ delay: i * 0.12, duration: 0.6, ease: EASE }} whileHover={{ y: -6 }} className={plan.featured ? "eye-panel-accent scale-105 rounded-2xl p-6 shadow-xl" : "rounded-2xl bg-background/50 p-6"}><p className={plan.featured ? "mb-2 text-sm font-bold opacity-70" : "mb-2 text-sm text-muted-foreground"}>{plan.label}</p><div className={plan.featured ? "text-3xl font-bold" : "text-3xl font-bold text-primary"}>{plan.price}</div><p className={plan.featured ? "mt-1 text-xs opacity-60" : "mt-1 text-xs text-muted-foreground/60"}>{plan.period}</p></motion.div>)}</div>
             <div className="mx-auto max-w-2xl text-left"><p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">Included at every tier</p><div className="grid gap-4 md:grid-cols-2">{included.map((item) => <div key={item} className="flex items-start gap-2 text-sm text-muted-foreground"><Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" /><span>{item}</span></div>)}</div></div>
           </motion.section>
 
           <motion.section initial="hidden" whileInView="show" viewport={viewport} variants={reveal} className="mt-24 text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-primary">Next step</p>
-            <h2 className="mb-5 text-3xl font-bold text-foreground">See it against your own patient records</h2>
-            <p className="mx-auto mb-10 max-w-2xl leading-relaxed text-muted-foreground">Tell us how your clinic currently handles scheduling, charting and billing, and we'll show you exactly how Clinexus fits in, using your workflow, not a generic demo.</p>
-            <div className="inline-flex flex-col gap-4 md:flex-row"><a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-10 py-4 font-bold text-primary-foreground transition-colors hover:bg-foreground"><MessageCircle className="h-5 w-5" />Talk to us on WhatsApp</a><Link to="/signup" className="inline-flex items-center justify-center gap-2 rounded-md border border-primary px-10 py-4 font-bold text-primary transition-colors hover:bg-primary/10">Try demo <ArrowRight className="h-4 w-4" /></Link></div>
-            <p className="mt-6 text-sm text-muted-foreground/60">Clinexus, clinic management built for how you actually work.</p>
+            <h2 className="mb-5 text-3xl font-bold text-foreground">See it with your own patients</h2>
+            <p className="mx-auto mb-10 max-w-2xl leading-relaxed text-muted-foreground">Tell us how your clinic handles booking, charting and billing today, and we'll show you Clinexus doing exactly that — your workflow, not a generic demo.</p>
+            <div className="inline-flex flex-col gap-4 md:flex-row"><a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-10 py-4 font-bold text-primary-foreground transition-colors hover:bg-foreground"><MessageCircle className="h-5 w-5" />Talk to us on WhatsApp</a><a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 rounded-md border border-primary px-10 py-4 font-bold text-primary transition-colors hover:bg-primary/10">Get started on WhatsApp <MessageCircle className="h-5 w-5" /></a></div>
+            <p className="mt-6 text-sm text-muted-foreground/60">Clinexus — clinic management for how your clinic really works.</p>
           </motion.section>
         </div>
       </div>

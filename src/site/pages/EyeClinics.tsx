@@ -94,8 +94,8 @@ const EyeClinics = () => {
               variants={reveal}
               className="mx-auto mb-8 max-w-4xl text-4xl font-bold leading-tight text-foreground md:text-6xl"
             >
-              Your patients trust you with their{" "}
-              <span className="text-primary">sight</span>. Your systems shouldn't make that harder.
+              You fix eyes all day.{" "}
+              <span className="text-primary">The paperwork shouldn't be your hardest job.</span>
             </motion.h1>
 
             <motion.p
@@ -105,9 +105,8 @@ const EyeClinics = () => {
               transition={{ delay: 0.12 }}
               className="mx-auto mb-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
             >
-              A missing IOP trend, a forgotten contact lens aftercare check, an optical order tracked in a
-              WhatsApp thread, none of it is dramatic on its own. Together, it's what keeps a well-run clinic
-              from feeling like one.
+              A lost pressure reading. A lens check nobody remembered. An optical order living in a chat
+              thread. Each one small. Together they eat your day — and put patients at risk.
             </motion.p>
 
             <motion.p
@@ -117,8 +116,8 @@ const EyeClinics = () => {
               transition={{ delay: 0.2 }}
               className="mx-auto mb-10 max-w-2xl leading-relaxed text-muted-foreground/80"
             >
-              Clinexus is a clinic management system built specifically around eye care, exams, refraction,
-              diagnostics, dispensing, surgery and the everyday admin, in one place.
+              Clinexus puts your exams, refractions, diagnostics, lens dispensing, surgeries and everyday
+              admin in one simple place, so nothing slips through.
             </motion.p>
 
             <motion.div
@@ -153,9 +152,8 @@ const EyeClinics = () => {
               variants={reveal}
               className="mx-auto mt-12 max-w-3xl border-t border-primary/20 pt-8 text-sm leading-relaxed text-muted-foreground"
             >
-              Clinexus is built working directly alongside dental and eye clinics, the eye clinic workflow
-              below was shaped with practitioners who deal with these exact records every day, not designed in
-              the abstract and hoped to fit.
+              We didn't design this from an office. We built it sitting with eye clinics like yours, day after
+              day, shaped by how you actually work — not how a software company imagines you do.
             </motion.p>
           </header>
 
@@ -182,8 +180,8 @@ const EyeClinics = () => {
             variants={reveal}
             className="mb-10 text-2xl font-bold text-foreground md:text-3xl"
           >
-            What's actually in it -{" "}
-            <span className="text-muted-foreground">what it does, specifically</span>
+            What you get -{" "}
+            <span className="text-muted-foreground">in plain words</span>
           </motion.h2>
 
           <div className="mb-24 grid grid-cols-12 gap-4">
@@ -199,7 +197,7 @@ const EyeClinics = () => {
               <div>
                 <span className="font-display text-5xl font-bold text-primary/30">01</span>
                 <h3 className="mb-2 mt-4 text-2xl font-bold text-card-foreground">
-                  One record for every exam and refraction
+                  Every exam, one record, nothing lost
                 </h3>
                 <Screenshot
                   src={shotExams}
@@ -207,14 +205,14 @@ const EyeClinics = () => {
                   className="mt-5"
                 />
                 <p className="mb-4 font-medium text-primary">
-                  Stop reconstructing a patient's history from memory or a paper folder, it's all on one
-                  timeline, trending automatically.
+                  Stop rebuilding a patient's history from memory or a paper folder — it's all on one
+                  timeline, trending on its own.
                 </p>
                 <p className="max-w-2xl leading-relaxed text-muted-foreground">
-                  Captures visual acuity (aided/unaided/pinhole), IOP with tonometry method, pupils, anterior
-                  segment, fundus, C/D ratio and dilation flag. Full refraction per eye, sphere, cylinder,
-                  axis, add, prism, PD, across distance, reading, bifocal, progressive, computer and contact
-                  lens prescription types, with issue and expiry dates tracked.
+                  Vision (aided, unaided, pinhole), eye pressure and how it was measured, pupils, front and
+                  back of the eye, C/D ratio and dilation. Full refraction per eye — sphere, cylinder, axis,
+                  add, prism, PD — for distance, reading, bifocal, progressive, computer and contact lens
+                  prescriptions, with issue and expiry dates tracked.
                 </p>
               </div>
               <div className="mt-8 flex gap-2 overflow-hidden">
@@ -243,21 +241,19 @@ const EyeClinics = () => {
               className="eye-panel-light col-span-12 rounded-3xl p-8 md:col-span-4"
             >
               <span className="font-display text-5xl font-bold opacity-20">02</span>
-              <h3 className="mb-2 mt-4 text-2xl font-bold">Diagnostic results that plot themselves</h3>
+              <h3 className="mb-2 mt-4 text-2xl font-bold">Charts that draw themselves</h3>
               <Screenshot
                 src={shotCharts}
                 alt="Eye charts plotting IOP, OCT and visual field trends over time"
                 className="mt-5"
               />
               <p className="mb-4 font-medium opacity-80">
-                Catch slow changes, like early glaucoma progression, before they become obvious in a single
-                visit.
+                Spot slow changes — like early glaucoma — before a single visit makes them obvious.
               </p>
               <p className="text-sm leading-relaxed opacity-70">
-                Log OCT (macula, RNFL), Humphrey visual fields, fundus photography, fluorescein angiography,
-                corneal topography, pachymetry, biometry/IOL Master, B-scan and specular microscopy, with file
-                uploads attached to findings. IOP, C/D ratio, RNFL and MD/PSD trend automatically, split
-                OD/OS. A single reports view groups every fundus, OCT and field result per patient.
+                Log OCT, visual fields, fundus photos, angiography, topography, pachymetry, biometry/IOL,
+                B-scan and more, with files attached to findings. Pressure, C/D ratio, RNFL and field trends
+                plot automatically for each eye. One reports view shows every result for a patient.
               </p>
             </motion.article>
 
@@ -272,7 +268,7 @@ const EyeClinics = () => {
             >
               <span className="font-display text-5xl font-bold text-primary/30">03</span>
               <h3 className="mb-2 mt-4 text-xl font-bold text-card-foreground">
-                Dispensing that tracks itself
+                Lens fittings and orders that track themselves
               </h3>
               <Screenshot
                 src={shotContactLenses}
@@ -280,13 +276,12 @@ const EyeClinics = () => {
                 className="mt-5"
               />
               <p className="mb-2 font-medium text-primary">
-                Know the status of every fitting and order without opening a chat thread.
+                Know where every fitting and order stands — without scrolling a chat thread.
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                Contact lens fittings record brand, type, modality, base curve, diameter, powers and fit
-                assessment, with aftercare check dates scheduled automatically from the fitting date. Optical
-                orders track frame, lens type, coatings and lab routing through ordered → at lab → ready →
-                collected, against promised and delivery dates.
+                Contact lens fittings record brand, type, curve, diameter, powers and fit, with aftercare
+                dates booked automatically. Optical orders track frame, lens type, coatings and lab status
+                from ordered → at lab → ready → collected, against promised dates.
               </p>
             </motion.article>
 
@@ -302,7 +297,7 @@ const EyeClinics = () => {
             >
               <span className="font-display text-5xl font-bold text-primary/30">04</span>
               <h3 className="mb-2 mt-4 text-xl font-bold text-card-foreground">
-                Surgery bookings with nothing left loose
+                Surgery bookings with nothing left to chance
               </h3>
               <Screenshot
                 src={shotSurgery}
@@ -310,12 +305,12 @@ const EyeClinics = () => {
                 className="mt-5"
               />
               <p className="mb-2 font-medium text-primary">
-                Everything surgery day needs is attached to the booking, not scattered across folders.
+                Everything surgery day needs sits with the booking — not scattered across folders.
               </p>
               <p className="text-sm leading-relaxed text-muted-foreground">
-                Book by procedure (phaco, trabeculectomy, YAG, pterygium, anti-VEGF injections and others),
-                eye side and theatre. Biometry-based IOL power selection, pre-op checklists and eye-specific
-                consent forms are tracked against the same record, with outcome notes after.
+                Book by procedure (phaco, trabeculectomy, YAG, pterygium, injections and more), eye and
+                theatre. IOL power from biometry, pre-op checklists and consent forms all live on the same
+                record, with outcome notes after.
               </p>
             </motion.article>
 
@@ -331,7 +326,7 @@ const EyeClinics = () => {
             >
               <span className="font-display text-5xl font-bold opacity-30">05</span>
               <h3 className="mb-2 mt-4 text-xl font-bold">
-                The rest of the clinic, not bolted on separately
+                Everything else — included, not bolted on
               </h3>
               <Screenshot
                 src={shotAppointments}
@@ -342,8 +337,8 @@ const EyeClinics = () => {
                 One system instead of three or four you have to keep in sync.
               </p>
               <p className="text-sm leading-relaxed opacity-90">
-                Appointments and waiting list, invoicing and payments, inventory for drops, lenses and frames,
-                pharmacy prescriptions, staff and schedules, and analytics across the whole clinic.
+                Appointments and waiting list, invoicing and payments, stock for drops, lenses and frames,
+                prescriptions, staff schedules and reports for the whole clinic.
               </p>
             </motion.article>
           </div>
@@ -366,7 +361,7 @@ const EyeClinics = () => {
             variants={reveal}
             className="mb-10 max-w-2xl text-muted-foreground"
           >
-            Every screen below is from a working demo clinic with real patient flow, not mockups.
+            Real screens from a working demo clinic — not mockups.
           </motion.p>
 
           <div className="mb-24 grid gap-10 md:grid-cols-2">
@@ -426,12 +421,11 @@ const EyeClinics = () => {
               Getting started
             </p>
             <h2 className="mb-4 text-3xl font-bold text-card-foreground">
-              One plan, everything above included
+              One plan. Everything included. No surprises.
             </h2>
             <p className="mx-auto mb-12 max-w-2xl text-muted-foreground">
-              No tier that holds back diagnostics or surgery tracking until you pay more, clinical,
-              dispensing, diagnostics, surgery and admin are all included from day one. Choose the billing
-              period that suits your clinic.
+              We don't hold diagnostics or surgery tracking behind a pricier tier. Everything above is in
+              from day one — just choose how often you want to pay.
             </p>
 
             <div className="mx-auto mb-12 grid max-w-4xl gap-8 md:grid-cols-3">
@@ -495,11 +489,11 @@ const EyeClinics = () => {
           >
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-primary">Next step</p>
             <h2 className="mb-5 text-3xl font-bold text-foreground">
-              See it against your own patient records
+              See it with your own patients
             </h2>
             <p className="mx-auto mb-10 max-w-2xl leading-relaxed text-muted-foreground">
-              Tell us how your clinic currently handles exams, dispensing and surgery bookings, and we'll show
-              you exactly how Clinexus fits in, using your workflow, not a generic demo.
+              Tell us how your clinic handles exams, dispensing and surgery today, and we'll show you Clinexus
+              doing exactly that — your workflow, not a generic demo.
             </p>
             <div className="inline-flex flex-col gap-4 md:flex-row">
               <a
@@ -511,16 +505,18 @@ const EyeClinics = () => {
                 <MessageCircle className="h-5 w-5" />
                 Talk to us on WhatsApp
               </a>
-              <Link
-                to="/signup"
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-md border border-primary px-10 py-4 font-bold text-primary transition-colors hover:bg-primary/10"
               >
-                Try demo
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+                Get started on WhatsApp
+                <MessageCircle className="h-5 w-5" />
+              </a>
             </div>
             <p className="mt-6 text-sm text-muted-foreground/60">
-              Clinexus, clinic management built for how you actually work.
+              Clinexus — clinic management for how your clinic really works.
             </p>
           </motion.section>
         </div>

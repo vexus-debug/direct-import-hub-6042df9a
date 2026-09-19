@@ -4,5 +4,5 @@
 - [x] Add reusable SOAP note templates
 - [x] Offer invoice creation when completing a visit
 - [ ] Validate the finished workflows in the preview
-- [ ] Send the login Create account link to Clinexus WhatsApp
-- [ ] Send every public Get Started link to Clinexus WhatsApp
+- [x] Send the login Create account link to Clinexus WhatsApp
+- [x] Send every public Get Started link to Clinexus WhatsApp
